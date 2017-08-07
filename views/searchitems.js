@@ -19,7 +19,10 @@ var app = app || {};
     },
 			
     search: function(){
-			alert("You have searched for " + $('.search-input').val());
+			var searchQuery = $('.search-input').val();
+			
+			alert("You have searched for " + searchQuery);
+			nutritionixSearch(searchQuery);
     }
 	})
 	
