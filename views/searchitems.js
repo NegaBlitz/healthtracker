@@ -19,8 +19,7 @@ var app = app || {};
     },
 			
     search: function(){
-      this.counter++;
-      $(this.el).append("<li>hello world"+this.counter+"</li>");
+			alert("You have searched for " + $('.search-input').val());
     }
 	})
 	
