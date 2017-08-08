@@ -9,4 +9,4 @@ var SearchList = Backbone.Collection.extend({
 });
 
 // Create our global collection of HealthItems
-app.SearchItems = new SearchList();
+app.searchItems = new SearchList();

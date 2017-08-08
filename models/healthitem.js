@@ -17,12 +17,12 @@ app.HealthItem = Backbone.Model.extend({
 
 //Tests the model:
 
-var health1 = new app.HealthItem();
-console.log(JSON.stringify(health1));
+// var health1 = new app.HealthItem();
+// console.log(JSON.stringify(health1));
 
-var health2 = new app.HealthItem({
-  name: 'something unhealthy',
-	calories: 1000,
-});
+// var health2 = new app.HealthItem({
+  // name: 'something unhealthy',
+	// calories: 1000,
+// });
 
-console.log(JSON.stringify(health2));
+// console.log(JSON.stringify(health2));
