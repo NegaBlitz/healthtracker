@@ -9,15 +9,20 @@ var healthListView;
 		
 		initialize: function(){
       _.bindAll(this, 'render', 'appendItem'); // fixes loss of context for 'this' within methods
-      this.render(); // not all views are self-rendering. This one is.
 			this.collection = app.healthItems;
 			console.log(this.collection);
+      this.render(); // not all views are self-rendering. This one is.
 			this.listenTo(this.collection, 'change add remove reset', this.render);
     },
 		
 		render: function(){
 			var calorieCount = 0;
-			alert("whao");
+			console.log(this.collection);
+			this.collection.each(function (model) {
+				calorieCount += model.get('calories');
+			})
+			calorieCount = Math.round(calorieCount * 100)/100;
+			$('#total-calories').text(calorieCount + ' total Calories');
     },
 	
 		appendItem: function(item) {
