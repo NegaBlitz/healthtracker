@@ -4,6 +4,7 @@ var app = app || {};
 	app.HealthItemView = Backbone.View.extend({
 	
 		tagName: 'li',
+		className: 'health-item',
 		
 		initialize: function(){
       _.bindAll(this, 'render', 'remove'); // fixes loss of context for 'this' within methods

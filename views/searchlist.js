@@ -6,7 +6,8 @@ var app = app || {};
 		el: $('.search'),
 		
 		events: {
-      'click button#search-button': 'search'
+      'click button#search-button': 'search',
+      'click button#clear-button': 'clear'
     },
 		
 		initialize: function(){
@@ -72,7 +73,13 @@ var app = app || {};
         model: item
       });
       $(".results-list").append(itemView.render().el);
-		}
+		},
+		
+		clear: function(){
+			// Wipe out the search list
+			app.searchItems.reset();
+			$(".results-list").text("");
+		},
 	})
 	
 	var searchListView = new app.SearchListView();
