@@ -60,6 +60,10 @@ var app = app || {};
 					self.appendItem(searchResult);
 					
 				}
+				
+				if(hits.length <= 0) {
+					$(".results-list").append("<p>Your search returned no results.</p>");
+				}
 				console.log(app.searchItems);
 			})
 			.fail(function(e) {

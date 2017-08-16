@@ -35,6 +35,10 @@ var app = app || {};
 			
 			// Logs the current list of healthItems
 			console.log(app.healthItems);
+			
+			// Clears the list as specified
+			app.searchItems.reset();
+			$(".results-list").text("");
 		}
 	})
 })(jQuery);
