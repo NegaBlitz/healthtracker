@@ -1,49 +1,52 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Health Tracker</title>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="css/styles.css" rel="stylesheet">
-		<meta name=viewport content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<h1>Health Tracker</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 search text-center">
-				<h3 class="search-title">Search for foods here (via Nutritionix):</h3>
-				<input class="search-input" type="text" placeholder="Search for food" />
-				<button id="search-button">Search</button>
-				<button id="clear-button">Clear</button>
-				<ul class="results-list">
-				</ul>
-			</div>
-			<div class="col-md-6">
-				<div class="health-list text-center">
-					<h3 class="diet-title">Your diet so far:</h3>
-				</div>
-				<h3 id="total-calories">Total Calories:</h3>
-			</div>
-		</div>
-	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://underscorejs.org/underscore-min.js"></script>
-	<script src="http://backbonejs.org/backbone-min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min.js"></script>
-	<script src="models/healthitem.js"></script>
-	<script src="collections/healthitemlist.js"></script>
-	<script src="collections/searchlist.js"></script>
-	<script src="views/healthitem.js"></script>
-	<script src="views/searchlist.js"></script>
-	<script src="views/searchitem.js"></script>
-	<script src="views/healthitemlist.js"></script>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Health Tracker</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 search text-center">
+                <h3 class="search-title">Search for foods here (via Nutritionix):</h3>
+                <input class="search-input" type="text" placeholder="Search for food" />
+                <button id="search-button">Search</button>
+                <button id="clear-button">Clear</button>
+                <ul class="results-list">
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="health-list text-center">
+                    <h3 class="diet-title">Your diet so far:</h3>
+                </div>
+                <h3 id="total-calories">Total Calories:</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="http://backbonejs.org/backbone-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min.js"></script>
+    <script src="models/healthitem.js"></script>
+    <script src="collections/healthitemlist.js"></script>
+    <script src="collections/searchlist.js"></script>
+    <script src="views/healthitem.js"></script>
+    <script src="views/searchlist.js"></script>
+    <script src="views/searchitem.js"></script>
+    <script src="views/healthitemlist.js"></script>
 </body>
+
 </html>
